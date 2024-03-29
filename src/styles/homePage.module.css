@@ -1,0 +1,721 @@
+.mainPage {
+  background-color: var(--backgroundColor);
+  height: 100vh;
+}
+.mainPage .leftGrid {
+  background-color: var(--backgroundColor-secondary);
+  position: relative;
+}
+.mainPage .loginLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+}
+.mainPage .right_half {
+  overflow-y: auto;
+  max-height: 100vh;
+}
+.mainPage .rightHalfWrapper {
+  padding: 20px 100px;
+}
+.mainPage .xperia_image {
+  width: 170px;
+  height: 70px;
+}
+.mainPage .WelcomeText {
+  color: var(--text-color-primary);
+  font-family: var(--heading_01);
+  font-size: 34px;
+  font-style: normal;
+  font-weight: var(--font-weight-normal);
+  line-height: 52px;
+  text-align: center;
+  padding: 0px 0px 10px 0px;
+}
+.mainPage .signInContainer {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: var(--border);
+  background: var(--backgroundColor);
+  box-shadow: none;
+}
+
+.mainPage .signInContainer > div {
+  padding: 0px;
+}
+.mainPage .sigin_text {
+  color: var(--text-color-primary);
+  text-align: center;
+  font-family: var(--heading_01);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: var(--font-weight-primary);
+  line-height: normal;
+  padding: 20px 0px;
+}
+.mainPage .sigin_textforgotPwd {
+  color: var(--text-color-primary);
+  text-align: center;
+  font-family: var(--heading_01);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: var(--font-weight-primary);
+  line-height: normal;
+  padding: 10px 0px;
+}
+.mainPage .sigin_textforgotPwduserMail {
+  color: var(--text-color-primary);
+  text-align: center;
+  font-family: var(--heading_01);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: var(--font-weight-primary);
+  line-height: normal;
+  padding: 10px 5px;
+}
+.mainPage .userEmail {
+  padding-left: 10px;
+}
+.mainPage .cardBody {
+  padding: 30px 50px;
+}
+.mainPage .emailText {
+  color: var(--label-color);
+  font-family: var(--heading_01);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: var(--font-weight-secondary);
+  line-height: normal;
+  padding: 15px 0px 0px 0px;
+}
+.mainPage .emailText::after {
+  content: " *";
+  color: var(--text-color-error);
+}
+.mainPage .emailTextEnterOtp {
+  color: var(--label-color);
+  font-family: var(--heading_01);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: var(--font-weight-secondary);
+  line-height: normal;
+  padding: 20px 0px 0px 0px;
+}
+.mainPage .emailTextEnterOtp::after {
+  content: " *";
+  color: var(--text-color-error);
+}
+.mainPage .textField {
+  width: 100%;
+  height: 20px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: var(--backgroundColor);
+  margin: 8px 0px 40px 0px;
+}
+
+.mainPage .textField > div {
+  border-radius: 8px;
+  border: 0px solid #d9d9d9;
+  font-family: var(--heading_01);
+}
+
+.mainPage .forgotPassword {
+  color: var(--text-color-normal);
+  font-family: var(--heading_01);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: var(--font-weight-secondary);
+  text-decoration-line: underline;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.mainPage .loginbutton {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  background-color: var(--btn-color-primary);
+  color: var(--backgroundColor);
+  margin: 30px 0px 20px 0px;
+  text-transform: initial;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.mainPage .divider {
+  width: 46%;
+  display: inline-block;
+  border-bottom: var(--border);
+}
+
+.mainPage .dividerContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.mainPage .or {
+  display: "inline-block";
+  padding: 0 10px;
+  color: var(--label-color);
+}
+
+.mainPage .errText {
+  color: var(--text-color-error);
+  text-align: left;
+}
+.mainPage .errorMsg {
+  font-size: 12px;
+}
+.mainPage .googleAuthbutton {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .mainPage .googleAuthbutton 
+>div
+>div>div>div
+{
+ height: 60px;
+ border-radius: 8px;
+} */
+.mainPage .termsBody {
+  padding: 10px 15px;
+}
+.mainPage .termsBodyforgotPwd {
+  padding: 10px 50px;
+}
+.mainPage .termsBodyResetPwd {
+  padding: 100px 50px;
+}
+.mainPage .termsLinks {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mainPage .termsOfService {
+  color: var(--text-color-normal);
+  font-family: var(--heading_01);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: var(--font-weight-secondary);
+  line-height: 16px;
+  text-align: left;
+}
+.mainPage .privacy {
+  color: var(--text-color-normal);
+  font-family: var(--heading_01);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: var(--font-weight-secondary);
+  line-height: 16px;
+  text-align: left;
+  padding: 0px 0px 0px 20px;
+}
+.mainPage .details {
+  color: var(--text-color-normal);
+  font-family: var(--heading_01);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: var(--font-weight-secondary);
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mainPage .forgotPasswordText {
+  color: var(--text-color-primary);
+  text-align: center;
+  font-family: var(--heading_01);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: var(--font-weight-secondary);
+  line-height: normal;
+}
+.sendButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainPage .sendButton {
+  display: flex;
+  width: 130px;
+  height: 50px;
+  padding: 19px 36px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: var(--btn-color-primary);
+  text-align: center;
+  margin: 20px 0px 20px auto;
+  color: var(--backgroundColor);
+  text-transform: initial;
+  font-size: 16px;
+  font-weight: 400;
+}
+.mainPage .sendButton:hover {
+  background-color: #d9d9d9;
+}
+.mainPage .takeMeBack {
+  color: var(--text-color-normal);
+  font-family: var(--heading_01);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: var(--font-weight-secondary);
+  line-height: normal;
+  padding: 30px 0px 0px 0px;
+}
+.mainPage .loginText {
+  color: var(--label-color);
+  font-family: var(--heading_01);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: var(--font-weight-secondary);
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.right_half .otpInputDiv {
+  display: flex;
+  padding: 20px 0px;
+}
+
+.right_half .otpInputDiv > div {
+  padding-left: 0;
+}
+.right_half .otpInputBox {
+  min-width: 47px;
+  min-height: 47px;
+  font-size: 25px;
+  margin-right: 36px;
+  border-radius: 8px;
+  border: var(--border);
+  background: var(--backgroundColor);
+}
+
+.right_half .forgotPasswordTextContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.right_half .otpSentText {
+  color: var(--text-color-primary);
+  text-align: center;
+  font-family: var(--heading_01);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: var(--font-weight-secondary);
+  line-height: normal;
+}
+.right_half .otpSentTextUser {
+  color: var(--text-color-primary);
+  text-align: center;
+  font-family: var(--heading_01);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: var(--font-weight-secondary);
+  line-height: normal;
+}
+.right_half .haventRecievedOtp {
+  color: var(--text-color-normal);
+  font-family: var(--heading_01);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: var(--font-weight-secondary);
+  line-height: normal;
+  padding: 40px 0px 50px 0px;
+}
+
+.right_half .resendOtpText {
+  cursor: pointer;
+  color: var(--label-color);
+  font-family: var(--heading_01);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: var(--font-weight-secondary);
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.mainPage .changePassButton {
+  display: flex;
+  width: 130px;
+  padding: 10px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(--btn-color-primary);
+  margin-left: 200px;
+}
+.mainPage .footerContainerConfirmPwd {
+  margin-top: 120px;
+  position: static;
+}
+/* Media Query for this page */
+@media (min-width: 2560px) {
+  .mainPage .rightHalfWrapper {
+    padding: 10px 150px;
+  }
+}
+
+@media (max-width: 1500px) and (min-width: 1024px) {
+  .mainPage .rightHalfWrapper {
+    padding: 10px 80px;
+  }
+  .mainPage .WelcomeText {
+    font-size: 26px;
+    line-height: 12px;
+    text-align: center;
+    margin: 12px 0px;
+  }
+  .mainPage .signInContainer {
+    width: 100%;
+  }
+  .mainPage .sigin_text {
+    font-size: 16px;
+    padding: 10px 0px 10px 0px;
+  }
+  .mainPage .sigin_textforgotPwd {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .mainPage .cardBody {
+    padding: 10px 20px;
+  }
+  .mainPage .emailText {
+    font-size: 14px;
+  }
+  .mainPage .textField {
+    width: 100%;
+    margin: 8px 0px 40px 0px;
+  }
+  .mainPage .forgotPassword {
+    font-size: 12px;
+  }
+  .mainPage .loginbutton {
+    height: 50px;
+    border-radius: 5px;
+    margin: 20px 0px 10px 0px;
+  }
+  .mainPage .divider {
+    width: 40%;
+  }
+  .mainPage .dividerContainer {
+    width: 100%;
+    text-align: center;
+  }
+  .mainPage .googleAuthbutton {
+    margin-top: 20px;
+  }
+  .mainPage .termsBody {
+    padding: 5px 30px;
+  }
+  .mainPage .termsLinks {
+    margin-bottom: 10px;
+  }
+  .mainPage .termsOfService {
+    line-height: 12px;
+    font-size: 12px;
+  }
+  .mainPage .privacy {
+    line-height: 12px;
+    font-size: 12px;
+  }
+  .mainPage .details {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .right_half .otpInputBox {
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 25px;
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 1025px) and (min-width: 769px) {
+  .mainPage .rightHalfWrapper {
+    padding: 8px 20px;
+  }
+  .mainPage .WelcomeText {
+    font-size: 26px;
+    line-height: 12px;
+    text-align: center;
+    margin: 12px 0px;
+  }
+  .mainPage .signInContainer {
+    width: 100%;
+  }
+  .mainPage .sigin_text {
+    font-size: 16px;
+    padding: 10px 0px 10px 0px;
+  }
+  .mainPage .cardBody {
+    padding: 10px 20px;
+  }
+  .mainPage .emailText {
+    font-size: 14px;
+    padding: 18px 0px 0px 0px;
+  }
+  .mainPage .textField {
+    width: 100%;
+    margin: 8px 0px 40px 0px;
+  }
+  .mainPage .forgotPassword {
+    font-size: 12px;
+  }
+  .mainPage .loginbutton {
+    height: 50px;
+    border-radius: 5px;
+    margin: 20px 0px 10px 0px;
+  }
+  .mainPage .divider {
+    width: 40%;
+  }
+  .mainPage .dividerContainer {
+    width: 100%;
+    text-align: center;
+  }
+  .mainPage .googleAuthbutton {
+    margin-top: 20px;
+  }
+  .mainPage .termsBody {
+    padding: 5px 15px;
+  }
+  .mainPage .termsLinks {
+    margin-bottom: 10px;
+  }
+  .mainPage .termsOfService {
+    line-height: 12px;
+    font-size: 12px;
+  }
+  .mainPage .privacy {
+    line-height: 12px;
+    font-size: 12px;
+  }
+  .mainPage .details {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .mainPage .sigin_textforgotPwd {
+    font-size: 12px;
+  }
+  .mainPage .sigin_textforgotPwduserMail {
+    font-size: 12px;
+  }
+  .right_half .otpInputBox {
+    min-width: 30px;
+    min-height: 30px;
+    font-size: 25px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 820px) {
+  .mainPage .leftGrid {
+    display: none;
+  }
+  .mainPage .rightHalfWrapper {
+    padding: 20px 70px;
+  }
+}
+@media (max-width: 768px) and (min-width: 620px) {
+  .mainPage .leftGrid {
+    display: none;
+  }
+  .mainPage .rightHalfWrapper {
+    padding: 20px 70px;
+  }
+  .mainPage .xperia_image {
+    width: 100px;
+    height: 50px;
+  }
+  .mainPage .WelcomeText {
+    font-size: 22px;
+    line-height: 12px;
+    text-align: center;
+    margin: 12px 0px;
+  }
+  .mainPage .signInContainer {
+    width: 100%;
+  }
+  .mainPage .sigin_text {
+    font-size: 16px;
+    padding: 10px 0px 10px 0px;
+  }
+  .mainPage .cardBody {
+    padding: 10px 20px;
+  }
+  .mainPage .emailText {
+    font-size: 14px;
+    padding: 18px 0px 0px 0px;
+  }
+  .mainPage .textField {
+    width: 100%;
+    margin: 8px 0px 40px 0px;
+  }
+  .mainPage .forgotPassword {
+    font-size: 12px;
+    padding: 18px 0px 0px 0px;
+  }
+  .mainPage .loginbutton {
+    height: 50px;
+    border-radius: 5px;
+    margin: 20px 0px 10px 0px;
+  }
+  .mainPage .divider {
+    width: 40%;
+  }
+  .mainPage .dividerContainer {
+    width: 100%;
+    text-align: center;
+  }
+  .mainPage .googleAuthbutton {
+    margin-top: 20px;
+  }
+  .mainPage .termsBody {
+    padding: 5px 15px;
+  }
+  .mainPage .termsLinks {
+    margin-bottom: 10px;
+  }
+  .mainPage .termsOfService {
+    line-height: 12px;
+    font-size: 10px;
+  }
+  .mainPage .privacy {
+    line-height: 12px;
+    font-size: 10px;
+  }
+  .mainPage .details {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .mainPage .sigin_textforgotPwd {
+    font-size: 14px;
+  }
+
+  .mainPage .sigin_textforgotPwduserMail {
+    font-size: 14px;
+  }
+  .right_half .otpInputBox {
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 25px;
+    margin-right: 30px;
+  }
+}
+@media (max-width: 621px) and (min-width: 320px) {
+  .mainPage .leftGrid {
+    display: none;
+  }
+  .mainPage .loginLogo {
+    display: none;
+  }
+  .mainPage .rightHalfWrapper {
+    padding: 8px 30px;
+  }
+  .mainPage .xperia_image {
+    width: 100px;
+    height: 50px;
+  }
+  .mainPage .WelcomeText {
+    font-size: 22px;
+    line-height: 12px;
+    text-align: center;
+    margin: 12px 0px;
+  }
+  .mainPage .signInContainer {
+    width: 100%;
+  }
+  .mainPage .sigin_text {
+    font-size: 14px;
+    padding: 10px 0px 10px 0px;
+  }
+  .mainPage .cardBody {
+    padding: 10px 20px;
+  }
+  .mainPage .emailText {
+    font-size: 14px;
+    padding: 18px 0px 0px 0px;
+  }
+  .mainPage .textField {
+    width: 100%;
+    margin: 8px 0px 40px 0px;
+  }
+  .mainPage .forgotPassword {
+    font-size: 12px;
+    padding: 20px 0px 0px 0px;
+  }
+  .mainPage .loginbutton {
+    height: 50px;
+    border-radius: 5px;
+    margin: 20px 0px 10px 0px;
+  }
+  .mainPage .divider {
+    width: 40%;
+  }
+  .mainPage .dividerContainer {
+    width: 100%;
+    text-align: center;
+  }
+  .mainPage .googleAuthbutton {
+    margin-top: 20px;
+  }
+  .mainPage .termsBody {
+    padding: 5px 15px;
+  }
+  .mainPage .termsLinks {
+    margin-bottom: 10px;
+  }
+  .mainPage .termsOfService {
+    line-height: 12px;
+    font-size: 10px;
+  }
+  .mainPage .privacy {
+    line-height: 12px;
+    font-size: 10px;
+  }
+  .mainPage .details {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .mainPage .sigin_textforgotPwd {
+    font-size: 12px;
+    padding: 18px 0px;
+  }
+  .mainPage .sigin_textforgotPwduserMail {
+    font-size: 14px;
+  }
+  .sendButtonContainer {
+    display: block;
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+  .mainPage .sendButton {
+    display: flex;
+    width: 360px;
+    height: 50px;
+    padding: 19px 36px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .right_half .otpInputBox {
+    min-width: 25px;
+    min-height: 25px;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .right_half .forgotPasswordTextContainer {
+    text-align: center;
+  }
+}
